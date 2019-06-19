@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.View.Playlisty">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray">
+                <!-- Place new controls here -->
+                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Nadpis" />
+                </StackLayout>
+
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
+                <Label Text="{Binding SongName}"/>
+                <Button Text="{Binding ButtonText}" HorizontalOptions="End"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+                <!-- Place new controls here -->
+                <StackLayout Spacing="0" Orientation="Horizontal">
+                    <Button Text="Domů" Command="{Binding DomuClick}"/>
+                    <Button Text="Playlisty" Command="{Binding PlaylistyClick}"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

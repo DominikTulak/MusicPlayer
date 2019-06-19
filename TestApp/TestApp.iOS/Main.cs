@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace MusicPlayer.iOS
+namespace TestApp.iOS
 {
     public class Application
     {

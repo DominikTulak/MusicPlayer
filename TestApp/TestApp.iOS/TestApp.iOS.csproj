@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E195F3A0-DD27-455C-8330-9CA90A23E378}</ProjectGuid>
+    <ProjectGuid>{50E3CE82-81DC-4BE7-956F-B917023C4944}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MusicPlayer.iOS</RootNamespace>
+    <RootNamespace>TestApp.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MusicPlayer.iOS</AssemblyName>
+    <AssemblyName>TestApp.iOS</AssemblyName>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -152,9 +152,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\MusicPlayer\MusicPlayer.csproj">
-      <Project>{F59C6289-D3BD-4A18-8C04-5D8C3EDF758A}</Project>
-      <Name>MusicPlayer</Name>
+    <ProjectReference Include="..\TestApp\TestApp.csproj">
+      <Project>{C3BB43CA-2C8D-42B9-B78B-0F3C1599B5FA}</Project>
+      <Name>TestApp</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
