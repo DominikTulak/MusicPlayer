@@ -1,28 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestApp.View.Playlisty">
+             x:Class="TestApp.View.Playlist">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGray">
-                <!-- Place new controls here -->
-                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Image Source="pause.png" />
-                    <Button Text="{Binding ButtonText}" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
-                </StackLayout>
-                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Image Source="pause.png" />
-                </StackLayout>
-                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Image Source="pause.png" />
-                </StackLayout>
-                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Image Source="pause.png" />
-                </StackLayout>
-
-
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Label Text="{Binding PlaylistName}" />
+                <StackLayout x:Name="Playlists" />
             </StackLayout>
-
             <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
                 <Label Text="{Binding SongName}"/>
                 <Button Text="{Binding ButtonText}" Command="{Binding ButtonClick}" HorizontalOptions="End"/>

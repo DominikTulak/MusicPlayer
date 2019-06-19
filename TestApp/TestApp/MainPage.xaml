@@ -16,7 +16,7 @@
 
         <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="LightBlue">
             <Label Text="{Binding SongName} " HorizontalOptions="StartAndExpand"/>
-            <ImageButton Source="{Binding ButtonText}" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
+            <Button Text="{Binding ButtonText}" Command="{Binding ButtonClick}" HorizontalOptions="End"/>
         </StackLayout>
 
         <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">

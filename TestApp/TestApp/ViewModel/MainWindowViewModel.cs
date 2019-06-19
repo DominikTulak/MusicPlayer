@@ -16,13 +16,13 @@ namespace TestApp.ViewModel
         public Command ButtonClick { get; }
         public string SongName { get; set; }
         public string ButtonText { get; set; }
-        bool initialState = true;
+        //bool initialState = true;
         public MainPage sender;
         System.TimeSpan duration;
         public MainWindowViewModel(MainPage sender)
         {
             SongName = "Test song";
-            ButtonText = "pause.png";
+            ButtonText = ("pause.png");
             this.sender = sender;
             
             DomuClick = new Command(Domu);

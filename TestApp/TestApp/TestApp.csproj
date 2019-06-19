@@ -15,6 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="View\Playlist.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\Playlisty.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
